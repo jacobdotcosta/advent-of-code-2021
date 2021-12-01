@@ -6,6 +6,8 @@
 
 == Introduction
 
+This project contains my solutions for the Advent Of Code 2021 aiming to learn some lambda programming.
+
 References:
 
 * https://adventofcode.com/2021/
@@ -19,6 +21,13 @@ Taking the input from https://adventofcode.com/2021/day/1/input and storing it a
 [source,shell script]
 ----
 $ curl -X PUT -H 'Content-Type: text/plain' --data-binary "@src/main/resources/day-1-1.txt" http://localhost:8080/day-1/1
+----
+
+Task Two
+
+[source,shell script]
+----
+$ curl -X PUT -H 'Content-Type: text/plain' --data-binary "@src/main/resources/day-1-1.txt" http://localhost:8080/day-1/2
 ----
 
 == Quarkus Intro

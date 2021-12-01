@@ -14,6 +14,10 @@ public class IncreaseCounter {
     return new IncreaseCounter(Integer.parseInt(s));
   }
 
+  public static IncreaseCounter buildCounter(Integer i) {
+    return new IncreaseCounter(i);
+  }
+
   public IncreaseCounter incrementCounter(int previousCounter) {
     this.counter = ++previousCounter;
     return this;
