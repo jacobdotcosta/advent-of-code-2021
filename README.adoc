@@ -12,7 +12,9 @@ References:
 
 == day 1
 
-https://adventofcode.com/2021/day/1/input
+Task One
+
+Taking the input from https://adventofcode.com/2021/day/1/input and storing it at `src/main/resources/day-1-1.txt`.
 
 [source,shell script]
 ----
