@@ -1,8 +1,5 @@
 package jacobdotcosta;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.util.*;
 import java.util.function.BiConsumer;
 import java.util.function.BinaryOperator;
@@ -12,18 +9,8 @@ import java.util.stream.Collector;
 
 public class DepthCollector implements Collector<Integer, DepthCollector.Depth3Storage, List<Integer>> {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(DepthCollector.class);
-
-  private List<Integer> resultList;
-  private Depth3Storage depth3Storage;
-
   public DepthCollector() {
-    this.depth3Storage = new Depth3Storage();
-  }
-
-  public DepthCollector(int capacity) {
-    this.depth3Storage = new Depth3Storage(capacity);
-  }
+ }
 
   public static DepthCollector toDepth3() {
     return new DepthCollector();
@@ -46,11 +33,7 @@ public class DepthCollector implements Collector<Integer, DepthCollector.Depth3S
 
   @Override
   public Function<DepthCollector.Depth3Storage, List<Integer>> finisher() {
-
-    return (storage) -> {
-      LOGGER.info("storage: {}", storage);
-      return storage.finalList;
-    };
+    return (storage) -> storage.finalList;
   }
 
   @Override
