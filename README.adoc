@@ -30,6 +30,17 @@ Task Two
 $ curl -X PUT -H 'Content-Type: text/plain' --data-binary "@src/main/resources/day-1-1.txt" http://localhost:8080/day-1/2
 ----
 
+== day 2
+
+Task One
+
+Taking the input from https://adventofcode.com/2021/day/2/input and storing it at `src/main/resources/day-2-1.txt`.
+
+[source,shell script]
+----
+$ curl -X PUT -H 'Content-Type: text/plain' --data-binary "@src/main/resources/day-2-1.txt" http://localhost:8080/day-2/1
+----
+
 == Quarkus Intro
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
