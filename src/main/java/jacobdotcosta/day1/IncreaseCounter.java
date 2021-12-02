@@ -1,4 +1,4 @@
-package jacobdotcosta;
+package jacobdotcosta.day1;
 
 public class IncreaseCounter {
 

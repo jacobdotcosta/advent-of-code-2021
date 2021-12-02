@@ -1,4 +1,4 @@
-package jacobdotcosta;
+package jacobdotcosta.day1;
 
 import java.util.*;
 import java.util.function.BiConsumer;

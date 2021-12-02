@@ -1,4 +1,4 @@
-package jacobdotcosta;
+package jacobdotcosta.day1;
 
 import io.smallrye.mutiny.Uni;
 import org.jboss.resteasy.reactive.RestResponse;
@@ -9,7 +9,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
-import static jacobdotcosta.DepthCollector.toDepth3;
+import static jacobdotcosta.day1.DepthCollector.toDepth3;
 
 @Path("/day-1")
 public class DayOneResource {
