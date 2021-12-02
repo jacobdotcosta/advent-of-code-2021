@@ -19,4 +19,14 @@ public class DayTwoResourceTest {
            .body(is("150"));
   }
 
+  @Test
+  public void testPartTwoEndpoint() {
+    given().when()
+           .body("forward 5\n" + "down 5\n" + "forward 8\n" + "up 3\n" + "down 8\n" + "forward 2")
+           .put("/day-2/2")
+           .then()
+           .statusCode(200)
+           .body(is("900"));
+  }
+
 }
